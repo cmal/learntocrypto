@@ -2,12 +2,8 @@
 
 var jsonStream = require('duplex-json-stream')
 var net = require('net')
+const {appendToTransactionLog, log} = require('hash')
 
-var log = [
-  {cmd: 'deposit', amount: 130},
-  {cmd: 'deposit', amount: 0},
-  {cmd: 'deposit', amount: 120}
-]
 
 function getBalance() {
   return log.reduce(function (amount, item, index) {
