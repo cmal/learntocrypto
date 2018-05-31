@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "duplex-json-stream": "^1.0.1",
+    "lodash": "^4.17.10",
     "sodium-native": "^2.1.6"
   }
 }
