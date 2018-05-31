@@ -80,7 +80,6 @@ var server = net.createServer(function (socket) {
       respondErr('not valid command', socket)
       break
     }
-    // socket.write can be used to send a reply
   })
 })
 
